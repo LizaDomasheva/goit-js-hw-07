@@ -22,4 +22,4 @@ const handleValidation = () => {
 }
 
 
-validationInput.addEventListener('blur', (handleValidation));
+validationInput.addEventListener('blur', handleValidation);

@@ -10,4 +10,4 @@ const handleFontSize = () => {
     spanText.style.fontSize = inputFontSize.value + 'px';
 }
 
-inputFontSize.addEventListener('input', (handleFontSize));
+inputFontSize.addEventListener('input', handleFontSize);
