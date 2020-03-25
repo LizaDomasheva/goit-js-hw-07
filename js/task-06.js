@@ -10,7 +10,8 @@
 const validationInput = document.querySelector('#validation-input');
 console.log(validationInput);
 
-validationInput.addEventListener('blur', (e) => {
+
+const handlerValidation = () => {
     if (validationInput.value.length === Number(validationInput.dataset.length)) {
         validationInput.classList.add('valid')
         validationInput.classList.remove('invalid');
@@ -18,4 +19,7 @@ validationInput.addEventListener('blur', (e) => {
         validationInput.classList.remove('valid');
         validationInput.classList.add('invalid');
     }
-})
+}
+
+
+validationInput.addEventListener('blur', (handlerValidation));
