@@ -11,7 +11,7 @@ const validationInput = document.querySelector('#validation-input');
 console.log(validationInput);
 
 
-const handlerValidation = () => {
+const handleValidation = () => {
     if (validationInput.value.length === Number(validationInput.dataset.length)) {
         validationInput.classList.add('valid')
         validationInput.classList.remove('invalid');
@@ -22,4 +22,4 @@ const handlerValidation = () => {
 }
 
 
-validationInput.addEventListener('blur', (handlerValidation));
+validationInput.addEventListener('blur', (handleValidation));
